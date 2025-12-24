@@ -1,0 +1,112 @@
+{
+  "mcpServers": {
+    "perplexity": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-perplexity"
+      ],
+      "env": {
+        "PERPLEXITY_API_KEY": ""
+      },
+      "description": "实时搜索最新信息",
+      "enabled": false,
+      "note": "需要 Perplexity API Key，从 https://www.perplexity.ai/settings/api 获取"
+    },
+
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_TOKEN": ""
+      },
+      "description": "远程控制 GitHub 仓库，移动端工作流关键组件",
+      "enabled": false,
+      "note": "需要 GitHub Personal Access Token，从 https://github.com/settings/tokens 生成"
+    },
+
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/zhangyuhang/knowledge-base"
+      ],
+      "description": "增强的文件系统访问和管理",
+      "enabled": true,
+      "note": "已配置为知识库目录"
+    },
+
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": ""
+      },
+      "description": "Brave 搜索引擎集成",
+      "enabled": false,
+      "note": "需要 Brave API Key"
+    },
+
+    "sqlite": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "--db-path",
+        "/Users/zhangyuhang/knowledge-base/knowledge.db"
+      ],
+      "description": "SQLite 数据库访问（用于学习数据存储和查询）",
+      "enabled": false,
+      "note": "可选，用于结构化数据存储"
+    }
+  },
+
+  "instructions": {
+    "setup": "配置步骤",
+    "steps": [
+      "1. Perplexity MCP (可选)",
+      "   - 访问 https://www.perplexity.ai/settings/api",
+      "   - 生成 API Key",
+      "   - 设置 PERPLEXITY_API_KEY 环境变量",
+      "   - 将 enabled 设置为 true",
+      "",
+      "2. GitHub MCP (移动端工作流必须)",
+      "   - 访问 https://github.com/settings/tokens",
+      "   - 生成 Personal Access Token (repo 权限)",
+      "   - 设置 GITHUB_TOKEN 环境变量",
+      "   - 将 enabled 设置为 true",
+      "",
+      "3. Filesystem MCP (已启用)",
+      "   - 已配置为知识库目录",
+      "   - 增强的文件管理功能",
+      "",
+      "4. Brave Search (可选)",
+      "   - 访问 https://api.search.brave.com/app/keys",
+      "   - 获取 API Key",
+      "   - 设置 BRAVE_API_KEY",
+      "",
+      "5. SQLite (可选)",
+      "   - 用于结构化数据存储",
+      "   - 学习数据统计和查询"
+    ],
+
+    "mobile_workflow": {
+      "title": "移动端工作流设置",
+      "description": "通过 GitHub Issues 远程控制 Claude Code",
+      "steps": [
+        "1. 将知识库推送到 GitHub",
+        "2. 在 GitHub mobile app 创建 issue",
+        "3. 在 issue 评论中提及 @claude",
+        "4. GitHub MCP 服务器会执行命令",
+        "5. Obsidian mobile 查看和编辑结果"
+      ]
+    }
+  }
+}
