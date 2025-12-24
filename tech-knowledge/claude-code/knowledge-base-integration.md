@@ -4,16 +4,16 @@ category: tech-knowledge/claude-code
 tags: [ClaudeCode, KnowledgeManagement, Automation, AI, Productivity, Workflow]
 created: 2025-12-24
 updated: 2025-12-24
-mastery: 4
+mastery: 3
 difficulty: 4
 review_dates:
-  - 2025-12-25
-  - 2025-12-27
-  - 2025-12-31
-  - 2026-01-07
-  - 2026-01-24
-  - 2026-04-24
-status: learning
+  - 2025-12-24  # 第1次复习: 当天
+  - 2025-12-27  # 第2次复习: 3天后
+  - 2025-12-31  # 第3次复习: 1周后
+  - 2026-01-07  # 第4次复习: 2周后
+  - 2026-01-24  # 第5次复习: 1月后
+  - 2026-04-24  # 第6次复习: 3月后
+status: reviewed
 related:
   - ../documentation/yaml-frontmatter.md
 ---
