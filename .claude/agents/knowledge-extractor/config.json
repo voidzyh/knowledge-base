@@ -1,0 +1,88 @@
+{
+  "name": "knowledge-extractor",
+  "description": "智能提取知识条目",
+  "version": "1.0.0",
+  "author": "Claude Code",
+  "created": "2025-12-24",
+
+  "capabilities": {
+    "content_analysis": true,
+    "deduplication": true,
+    "metadata_generation": true,
+    "categorization": true,
+    "link_building": true,
+    "batch_processing": true
+  },
+
+  "extraction_rules": {
+    "min_length": 200,
+    "require_code": false,
+    "require_definition": true,
+    "auto_tags": true,
+    "auto_related": true,
+    "similarity_threshold": 0.7,
+    "content_quality_weights": {
+      "completeness": 0.3,
+      "depth": 0.3,
+      "practicality": 0.2,
+      "structure": 0.2
+    }
+  },
+
+  "quality_thresholds": {
+    "auto_extract": 70,
+    "interactive": 50,
+    "skip": 50
+  },
+
+  "categorization": {
+    "enabled": true,
+    "confidence_threshold": 0.8,
+    "default_category": "tech-knowledge/general"
+  },
+
+  "deduplication": {
+    "title_similarity_threshold": 0.7,
+    "content_similarity_threshold": 0.6,
+    "tag_matching_enabled": true
+  },
+
+  "batch_mode": {
+    "parallel_processing": true,
+    "max_workers": 3,
+    "continue_on_error": true
+  },
+
+  "output": {
+    "auto_create_directories": true,
+    "backup_before_write": true,
+    "update_source_notes": true,
+    "generate_report": true
+  },
+
+  "tools": [
+    "read",
+    "write",
+    "search",
+    "edit",
+    "list_files"
+  ],
+
+  "permissions": {
+    "read": [
+      "daily-notes/**",
+      "templates/**"
+    ],
+    "write": [
+      "ai-ml/**",
+      "programming/**",
+      "tech-knowledge/**"
+    ]
+  },
+
+  "interaction": {
+    "default_mode": "interactive",
+    "auto_mode_available": true,
+    "preview_mode_available": true
+  }
+}
