@@ -1,0 +1,76 @@
+{
+  "name": "daily-planner",
+  "description": "生成个性化每日学习计划",
+  "version": "1.0.0",
+  "author": "Claude Code",
+  "created": "2025-12-24",
+
+  "schedule": {
+    "trigger": "daily",
+    "time": "08:00",
+    "timezone": "Asia/Shanghai",
+    "auto_run": false
+  },
+
+  "capabilities": {
+    "analyze_history": true,
+    "check_reviews": true,
+    "recommend_topics": true,
+    "generate_plan": true,
+    "track_progress": true
+  },
+
+  "preferences": {
+    "default_study_time": "4hours",
+    "new_vs_review_ratio": 0.6,
+    "morning_focus": "new_learning",
+    "afternoon_focus": "review",
+    "evening_focus": "practice",
+    "break_interval": 45,
+    "break_duration": 5
+  },
+
+  "priorities": {
+    "overdue_review_weight": 10,
+    "important_weight": 8,
+    "low_mastery_weight": 7,
+    "continuation_weight": 6,
+    "goal_alignment_weight": 5
+  },
+
+  "tools": [
+    "read",
+    "search",
+    "list_files",
+    "write"
+  ],
+
+  "permissions": {
+    "read": [
+      "daily-notes/**",
+      "ai-ml/**",
+      "programming/**",
+      "tech-knowledge/**"
+    ],
+    "write": [
+      "daily-notes/*.md"
+    ]
+  },
+
+  "output": {
+    "formats": [
+      "markdown",
+      "json",
+      "text"
+    ],
+    "include_statistics": true,
+    "include_recommendations": true,
+    "include_resources": true
+  },
+
+  "learning_paths": {
+    "ai-ml": ["LLM基础", "Prompt工程", "Agent原理", "Agent实战"],
+    "programming": ["基础语法", "核心概念", "框架应用", "最佳实践"],
+    "react": ["JS基础", "React基础", "Hooks", "高级特性"]
+  }
+}
