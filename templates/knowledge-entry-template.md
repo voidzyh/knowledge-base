@@ -1,3 +1,23 @@
+---
+title: {{KNOWLEDGE_TITLE}}
+category: {{CATEGORY}}
+tags: [{{TAG1}}, {{TAG2}}, {{TAG3}}]
+created: {{DATE}}
+updated: {{LAST_UPDATE}}
+mastery: 3
+difficulty: 3
+review_dates:
+  - {{DATE_PLUS_1_DAY}}
+  - {{DATE_PLUS_3_DAY}}
+  - {{DATE_PLUS_1_WEEK}}
+  - {{DATE_PLUS_2_WEEK}}
+  - {{DATE_PLUS_1_MONTH}}
+status: learning
+related:
+  - related-file-1.md
+  - related-file-2.md
+---
+
 # {{KNOWLEDGE_TITLE}}
 
 ## 📋 基本信息
@@ -6,7 +26,8 @@
 - **标签**: #{{TAG1}} #{{TAG2}} #{{TAG3}}
 - **创建日期**: {{DATE}}
 - **最后更新**: {{LAST_UPDATE}}
-- **掌握程度**: ⭐⭐⭐⭐⭐ (1-5星)
+- **掌握程度**: ⭐⭐⭐ (1-5星)
+- **难度等级**: ⭐⭐⭐ (1-5星)
 
 ## 🎯 核心概念
 
