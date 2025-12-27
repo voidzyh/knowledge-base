@@ -3,16 +3,16 @@ title: Claude Code Agent Skills
 category: ai-ml/agent
 tags: [ClaudeCode, Agent, Skills, Automation, AI, Productivity]
 created: 2025-12-24
-updated: 2025-12-24
-mastery: 3
+updated: 2025-12-27
+mastery: 2
 difficulty: 4
 review_dates:
-  - 2025-12-25
-  - 2025-12-27
-  - 2025-12-31
-  - 2026-01-07
+  - 2025-12-28
+  - 2025-12-30
+  - 2026-01-03
+  - 2026-01-10
   - 2026-01-24
-  - 2026-04-24
+  - 2026-03-24
 status: learning
 related:
   - ../../tech-knowledge/claude-code/knowledge-base-integration.md

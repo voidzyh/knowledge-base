@@ -1,3 +1,24 @@
+---
+title: AI Agent 基础概念
+category: ai-ml/agent
+tags: [AI, Agent, 智能体, 自主系统, LLM, MCP]
+created: 2025-12-10
+updated: 2025-12-27
+mastery: 4
+difficulty: 3
+review_dates:
+  - 2025-12-28
+  - 2025-12-30
+  - 2026-01-03
+  - 2026-01-10
+  - 2026-01-24
+  - 2026-04-24
+status: learning
+related:
+  - ../../tech-knowledge/claude-code/knowledge-base-integration.md
+  - ../../tech-knowledge/claude-code/claude-code-skills.md
+---
+
 # AI Agent 基础概念
 
 ## 📋 基本信息
@@ -5,7 +26,7 @@
 - **分类**: AI-ML / 智能体
 - **标签**: #AI #Agent #智能体 #自主系统 #2025趋势
 - **创建日期**: 2025-12-10
-- **最后更新**: 2025-12-10
+- **最后更新**: 2025-12-27
 - **掌握程度**: ⭐⭐⭐⭐☆ (4/5星)
 
 ## 🎯 核心概念
@@ -102,10 +123,10 @@ class SimpleAgent:
 ```
 
 ## 🔗 相关概念
-- [LLM (大语言模型)](../llm/)：Agent 的"大脑"组件
-- [MCP (模型上下文协议)](../mcp/)：Agent 与外部工具的连接协议
-- [Prompt Engineering](../prompt/)：与 Agent 交互的艺术
-- [Agent 框架对比](../frameworks/)：不同 Agent 开发框架
+- **[LLM (大语言模型)](../llm/)**：Agent 的"大脑"组件
+- **[MCP (模型上下文协议)](../mcp/)**：Agent 与外部工具的连接协议
+- **[Prompt Engineering](../prompt/)**：与 Agent 交互的艺术
+- **[Agent 框架对比](../frameworks/)**：不同 Agent 开发框架
 
 ## 📚 深入学习资源
 - 📖 [2025年AI Agent智能体行业深度分析](https://zhuanlan.zhihu.com/p/32153171603)
@@ -141,15 +162,9 @@ class SimpleAgent:
 5. **测试验证**：确保 Agent 的行为符合预期
 6. **持续优化**：根据使用反馈不断改进
 
-## 🔄 复习计划
-- **第1次复习**: 2025-12-11
-- **第2次复习**: 2025-12-13
-- **第3次复习**: 2025-12-17
-- **第4次复习**: 2025-12-24
-- **第5次复习**: 2026-01-10
-
 ## 📝 个人笔记
 AI Agent 是 2025 年 AI 领域最具潜力的技术方向之一。它将 AI 从被动工具转变为主动执行者，具备巨大的商业价值和社会影响。关键是要理解其核心技术架构和适用场景，避免盲目应用。
 
 ---
-**状态**: ✅ 已完成基础概念学习
+
+**状态**: ✅ 已完成基础概念学习，已添加元数据

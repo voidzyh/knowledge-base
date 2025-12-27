@@ -14,20 +14,6 @@
       "note": "需要 Perplexity API Key，从 https://www.perplexity.ai/settings/api 获取"
     },
 
-    "github": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-github"
-      ],
-      "env": {
-        "GITHUB_TOKEN": ""
-      },
-      "description": "远程控制 GitHub 仓库，移动端工作流关键组件",
-      "enabled": false,
-      "note": "需要 GitHub Personal Access Token，从 https://github.com/settings/tokens 生成"
-    },
-
     "filesystem": {
       "command": "npx",
       "args": [
